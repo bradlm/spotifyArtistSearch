@@ -1,0 +1,189 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+#bgDiv {
+  position: absolute;
+  background-color: white;
+  width: 600px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../content/spotify-bg.jpg");
+  background-size: 450px;
+  background-position: center 60%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#endDiv {
+  margin: 10px;
+}
+#topContainer {
+  background-color: white;
+  width: 600px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+#searchContainer {
+  width: 100%;
+}
+#resultsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flexContainer {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+.album .tracks {
+  font-size: 12px;
+  cursor: pointer;
+}
+.album .artists {
+  font-size: 14px;
+}
+.artist {
+  display: flex;
+  flex-flow: column-wrap;
+  overflow: auto;
+  width: 500px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+.artistImg {
+  height: 170px;
+  width: 170px;
+  border-radius: 100px;
+  margin: 4px;
+  float: left;
+}
+.artist span {
+  text-align: left;
+  margin: 5px 0 5px 30px;
+}
+.artist .name {
+  max-width: 200px;
+  font-size: 24px;
+}
+.artist span:after, .relatedArtist span:after {
+  content: "\A";
+  white-space: pre;
+}
+ul {
+  margin-left: 30px;
+  padding:0;
+}
+li {
+  display: inline-block;
+}
+.artistProfile.genres {
+  cursor: pointer;
+}
+.artist .followers, .artist .genres {
+  word-wrap: break-word;
+  max-width: 300px;
+  font-size: 12px;
+  margin-top: 0px;
+}
+.artistProfileContainer {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  width: 300px;
+}
+.dropdown {
+  margin: 4px;
+  width: 50px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  background-color: white;
+}
+.name {
+  font-weight: bold;
+  word-wrap: break-word;
+  margin-bottom: 0px;
+}
+.name a:link, .name a:visited {
+  text-decoration: none;
+  color: black;
+}
+.name a:hover, .name a:active {
+  text-decoration: underline;
+}
+.relatedArtist, .album {
+  display: flex;
+  flex-flow: column-wrap;
+  overflow: auto;
+  width: 300px;
+  box-sizing: border-box;
+}
+.relatedArtistImg, .albumImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  margin: 2px;
+  float: left;
+}
+.albumImg {
+  border-radius: 0px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+}
+.relatedArtist > span, .albums > span {
+  text-align: left;
+  margin: 5px 0 5px 10px;
+}
+.relatedArtist .name, .album .name {
+  max-width: 200px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.album .name {
+  font-size: 16px;
+}
+.search {
+  margin: 4px;
+  width: 300px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  text-align: center;
+  background-color: white;
+  background-image: url("../content/spotify.ico");
+  background-size: 25px;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 45px;
+  -webkit-transition: width 0.8s ease-in-out;
+  transition: width 0.8s ease-in-out;
+}
+.search:focus {
+  width: 500px;
+}
+.topTracksPlayer {
+  width: 280px;
+  height: 380px;
+}
+.albumPlayer {
+  width: 210px;
+  height: 300px;
+}
+.topTracks, .albums, .relatedArtists {
+  cursor: pointer;
+}
+.topTracksContainer, .albumTracksContainer {
+  margin: 0 0 0 30px;
+}
