@@ -1,4 +1,4 @@
-const PORT = process.argv[2] || 1337;
+const PORT = process.env.PORT || 5000;
 
 var express = require('express');
 var app = express();
@@ -11,6 +11,6 @@ app.use(
 );
 
 app.listen(PORT, () => console.log(
-  chalk.green.bold('Reddit Viewer file server listening on port: ') 
+  chalk.green.bold('Spotify Artist Search file server listening on port: ') 
   + chalk.cyan.bold(PORT)
 ));
