@@ -171,7 +171,7 @@ li {
   width: 250px;
   height: 300px;
 }
-.topTracks, .albums, .relatedArtists, .album .tracks, .artistProfile .genres, .relatedArtist .name, .album.name {
+.topTracks, .albums, .relatedArtists, .album .tracks, .artistProfile .genre, .relatedArtist .name, .album .name {
   cursor: pointer;
 }
 .topTracksContainer, .albumTracksContainer {
@@ -180,6 +180,9 @@ li {
 @media (max-width: 600px) {
   #bgDiv, #topContainer{
     width: 380px;
+  }
+  #bgDiv {
+    background-position: center 100%;
     background-size: 350px;
   }
   .artist, .search:focus {
@@ -207,5 +210,5 @@ li {
     max-width: 200px;
     font-size: 18px;
   }
-
 }
+@media (max-height: )

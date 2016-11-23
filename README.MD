@@ -1,22 +1,43 @@
 # Synopsis 
 
+This is a Spotify artist search app, using the Spotify API and Spotify Play Button. 
+
 # Getting Started
 
 ## Viewing This Readme
 
 Markdown files can be viewed in Chrome using [Markdown Preview Plus][1], or any other equivalent extension from the [Chrome store][2]. To view, simply install any such extension and open README.MD in Chrome.
 
+##Hardware Requirements
+This application requires a working internet connection. It is compatible with most browsers and screen sizes. 
+
 ## Installation
 
-This single-page application does not require any installation beyond a working web browser and active internet connection. 
-
-### Optional Installation
+Run `npm i` from the command line in the spotifyArtistSearch top folder.
 
 ## Setup
 
-To start, simply open `client/index.html` with your web browser.
+### Quick Setup
+After installing, the app can be accessed at `content/index.html`
 
-### Optional Setup: CLI + Server
+### Full Setup
+Run `npm start` to run the application. A port can be specified by running `PORT={your port here} npm start`, otherwise the application will default to 5000. The application can then be opened by navigating to `localhost:{port}`. 
+
+### Development Setup
+When developing with this application, use `npm run dev`. To specify a port, see Full Setup above.
+
+# User Guide
+
+## Searching
+- A search can be conducted by typing in the artist's name into the input field. 
+- One or more genres may also be selected by typing `genre:{your genre}` for single-word genres, or `genre:"{your genre}"` (with double quotes) for genres that are longer than one word.
+- The number of results displayed can be set manually using the dropdown menu.
+- At the bottom of the page is a more button to display additional results. 
+
+### Viewing Results
+- Clicking on an artist or album name will open a new tab containing Amazon.com store results for that artist or album. 
+- Clicking on an artist or genre will bring you to a search using that artist or genre.
+- Music can be found in `Top Tracks` and the `See Tracks` section of `Albums`.
 
 # Project Information
 
