@@ -63,7 +63,11 @@ export var albums = e => {
               }" class="albumImg">
             </div>
             <div class="albumContainer" data-id="${id}" data-name="${name}">
-              <span class="albumProfile name"><a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Ddigital-music&field-keywords=${name.replace(/\b\s+\b/g, '+').replace(' ', '')}" title="Discover ${name} on Amazon.com">${name}</a></span>
+              <span class="albumProfile name"><a href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Ddigital-music&field-keywords=${name.replace(/\b\s+\b/g, '+').replace(' ', '')}" title="Discover ${name} on Amazon.com">${
+                  name.length > 20 ? 
+                    name.slice(0, 19) + '...'
+                    : name
+                }</a></span>
               <span class="albumProfile tracks">+ See Tracks</span>
             </div>
           </div>
@@ -122,7 +126,11 @@ export var relatedArtists = e => {
               }" class="relatedArtistImg">
             </div>
             <div class="relatedArtistProfileContainer" data-id="${id}" data-name="${name}">
-              <span class="relatedArtistProfile name">${name}</span>
+              <span class="relatedArtistProfile name">${
+                  name.length > 20 ? 
+                    name.slice(0, 19) + '...'
+                  : name
+                }</span>
               <span class="relatedArtistProfile followers">${ //format follower total
                 total.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
               } followers</span>
