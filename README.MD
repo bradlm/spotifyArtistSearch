@@ -2,29 +2,31 @@
 
 This is a Spotify artist search app, using the Spotify API and Spotify Play Button. 
 
+The deployed app can be found [here][0].
+
 # Getting Started
 
 ## Viewing This Readme
 
-Markdown files can be viewed in Chrome using [Markdown Preview Plus][1], or any other equivalent extension from the [Chrome store][2]. To view, simply install any such extension and open README.MD in Chrome.
+Markdown files can be viewed using Github, or in Chrome using [Markdown Preview Plus][1], or any other equivalent extension from the [Chrome store][2]. To view, simply install any such extension and open README.MD in Chrome.
 
 ##Hardware Requirements
 This application requires a working internet connection. It is compatible with most browsers and screen sizes. 
 
 ## Installation
 
-Run `npm i` from the command line in the spotifyArtistSearch top folder.
+Run `$ npm i && webpack` in the spotifyArtistSearch top folder.
 
 ## Setup
 
 ### Quick Setup
-After installing, the app can be accessed at `content/index.html`
+After installing, the app can be accessed at `client/index.html`
 
 ### Full Setup
-Run `npm start` to run the application. A port can be specified by running `PORT={your port here} npm start`, otherwise the application will default to 5000. The application can then be opened by navigating to `localhost:{port}`. 
+Run `$ npm start` to run the application. A port can be specified by running `$ PORT={your port here} npm start`, otherwise the application will default to 5000. The application can then be opened by navigating to `localhost:{port}`. 
 
 ### Development Setup
-When developing with this application, use `npm run dev`. To specify a port, see Full Setup above.
+When developing with this application, use `$ npm run dev`. To specify a port, see Full Setup above.
 
 # User Guide
 
@@ -64,6 +66,7 @@ When developing with this application, use `npm run dev`. To specify a port, see
 
 
 [Links]:_
+[0]: https://spotify-artist-search.herokuapp.com/
 [1]: https://chrome.google.com/webstore/detail/markdown-preview-plus/febilkbfcbhebfnokafefeacimjdckgl
 [2]: https://chrome.google.com/webstore/category/extensions
 [3]: https://docs.npmjs.com/getting-started/what-is-npm
